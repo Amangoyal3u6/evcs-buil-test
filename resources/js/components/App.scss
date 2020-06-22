@@ -1,0 +1,279 @@
+$redshade : #EC1B21; 
+
+*{
+    box-sizing: border-box;
+}
+
+@mixin header {
+
+.logo-header{
+    background-color: red;
+    width:100%;
+    height:auto;
+
+img{ 
+    height:60px;
+    width:80px;
+    position: left;
+}
+ .CompName {
+    display: inline-block;
+    color: white;
+    font-size: large;
+    margin: 17px 10px;
+    font-size-adjust: 0.60;
+    font-weight: bolder;
+}
+
+
+}
+/*
+@media screen and (max-width:528px){
+    .logo-header{
+        img{
+            width: 25%;
+        }
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .logo-header{
+        img{
+            width: 18%;
+        }
+    }
+}
+*/
+}
+
+
+.sign-box {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+ .Sign{
+    @include header();
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    float:left;
+
+    .Sign-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        font-size: 4em;        
+        height: 100%;
+        margin: 0 auto;
+        width:100%;
+        text-align: center;    
+
+    }
+
+    .sign-in-form{
+
+        padding: auto;
+        width: 100%;
+
+        h3{
+            font-family: 'Quicksand', sans-serif;
+            color: rgba(0, 0, 0, 0.9);
+        }   
+                 
+        .input-box{
+            display:flex;
+            flex-direction: row;
+            width: fit-content;
+            border: 2px solid $redshade;
+            margin: 0 auto;
+            padding: 0px;
+            font-family: 'Comic Neue', cursive;
+
+            .fa-phone{
+                padding: 5px;
+                margin: 3px;
+                font-size: 35px;
+                color: $redshade ;
+              }
+
+            ::placeholder{
+                font-weight: 500;
+                text-align: center;
+            }
+
+            input{
+                outline: none;
+                font-size: 1.5rem;
+                width: fit-content;
+                // text-align: center;
+                padding: 10px 20px;
+                border: none;
+                text-align: left;
+            } 
+
+            &:visited{
+                border: 2px solid $redshade;
+            }
+        }
+    }
+        #submitphone{
+            margin: auto;
+            font-size: 25px;
+            height: 51px;
+            color: $redshade;
+            padding: 0px;
+
+
+            &:hover{
+                background-color: $redshade ;
+                color: white;
+            }
+    }
+
+
+    .otp-boxes{        
+        display: flex;
+        align-items: center;
+    }
+
+    .otp-input{
+        border-style: double;
+        border-radius: 25%;
+        margin: 0.15em;
+        outline: none;
+    }
+
+    Button {
+
+        display:block;
+        margin: 40px auto;
+        
+    }
+
+ }
+    .slider {
+        width: 50%;
+        float:right;
+        height:100vh;
+    
+    img {
+        width: 100%;
+        height:100vh;
+        background-repeat: no-repeat;
+    }
+    .owl-theme {
+        .owl-dots {
+            display: none;
+        }
+    }    
+    }
+
+
+}
+@media screen and (max-width:485px){
+
+    .Sign{
+        position: static;
+        // background-color: red;
+       .sign-in-form{
+            padding-top: 5px;
+            .otp-input{
+                border-style: double;
+                border-radius: 25%;
+                margin: 0em;
+                outline: none;
+            }
+
+          }
+
+        .submit-page{
+            margin: 0px;
+        }
+    }
+
+}
+
+@media screen and (max-width:716px){
+
+    .sign-box{
+        position: static;
+    .Sign{
+        width: 100%;
+        float: none;
+     }   
+    
+
+    .slider{
+        width: 100%;
+        float: none;
+        display: none;
+    }
+}
+}
+
+
+@media screen and (max-width:400px){
+
+    .Sign-content{
+     
+        display: flex;
+        flex-direction: row;
+
+    .mdl-grid{
+
+        box-sizing: border-box;
+        width: 100%;
+        position: static;
+        margin: 0px;
+        padding: 16px;
+    }
+
+
+    .sign-in-form{
+        .input-box{
+           display: flex;
+        }
+    }
+
+    }
+}
+
+
+// MainView CSS
+
+.stationListItem{
+ 
+    :hover{
+        color: rgba(255, 10, 10, 0.9);
+        transition: color 0.1s linear ;
+    }
+    .listItemImg{
+        margin : 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
